@@ -120,6 +120,35 @@ h2{
     margin-bottom: 0;
 }
 
+/*  about  */
+.about_2{
+    display: flex;
+    margin-top: 5%;
+    padding: 0 3%;
+}
+.about_2 p{
+    margin: 0;
+}
+.about_2 .icon{
+    width: 60%;
+    margin-right: 10%;
+}
+.about_2 section{
+    line-height: 1.5;
+    margin: auto 0;
+    width: 80%;
+    height: 100%;
+}
+.about_2 section p{
+    margin-bottom: 5%;
+}
+.name{
+    font-weight: bold;
+}
+.about_2 .syo-kai p{
+    margin-bottom: 0;
+}
+
 /*  artworks  */
 .artworks ul{
     display: flex;
