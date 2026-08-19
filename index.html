@@ -52,16 +52,42 @@
 
             </div>
 
-
-            <div class="artworks">
-
-                <h2 id="artworks">ARTWORKS</h2>
-
                 <div class="web">
                     <h3>WEB</h3>
                     <ul>
-                        <!--<iframe src="https://hsinu200612-crypto.github.io/kanimon/" width="800" height="600"></iframe>-->
-                        <li><img src="images/web_kanimon.png" alt="カニモンサイト"></li>
+                        <li>
+                            <!-- ポップアップを開くボタン -->
+                            <button onclick="openPopup()"><img src="images/web_kanimon.png" alt="カニモンサイト"></button>
+                            <!-- ポップアップの本体 -->
+                            <div class="popup-overlay" id="popup1">
+                                <div class="popup-content">
+                                    <iframe src="https://hsinu200612-crypto.github.io/kanimon/" width="800" height="600"></iframe>
+                                </div>
+                            </div>
+                            <script>
+                                // ポップアップを開く関数
+                                function openPopup() {
+                                document.getElementById('popup1').style.display = 'block';
+                                }
+                                // ポップアップを閉じる関数
+                                function closePopup() {
+                                document.getElementById('popup1').style.display = 'none';
+                                }
+                                // 背景をクリックした時にポップアップを閉じる
+                                const overlay = document.getElementById('popup1');
+                                overlay.onclick = function(event) {
+                                if (event.target === overlay) {
+                                    closePopup();
+                                }
+                                };
+                                // ESCキーでポップアップを閉じる
+                                document.addEventListener('keydown', function(event) {
+                                if (event.key === 'Escape') {
+                                    closePopup();
+                                }
+                                });
+                            </script>
+                        </li>
                         <li><img src="images/web_hanamatu.png" alt="花松サイト"></li>
                         <li><img src="images/web_kumakumaaice.png" alt="くまくまアイス"></li>
                     </ul>
@@ -69,27 +95,269 @@
 
                 <h3>GRAPHIC</h3>
                 <ul>
-                    <li><img src="images/board_postcard.jpg" alt="ポストカード看板"></li>
-                    <li><img src="images/quocard.png" alt="QUOカード"></li>
-                    <li><img src="images/drawing_Venus.jpg" alt="ヴィーナス"></li>
-                    <li><img src="images/drawing_wine.jpg" alt="ワイン"></li>
+                    <li>
+                        <!-- ポップアップを開くボタン -->
+                        <button onclick="openPopup()"><img src="images/board_postcard.jpg" alt="ポストカード看板"></button>
+                        <!-- ポップアップの本体 -->
+                        <div class="popup-overlay" id="popup2">
+                            <div class="popup-content">
+                                <img src="images/board_postcard.jpg" alt="ポストカード看板">
+                            </div>
+                        </div>
+                        <script>
+                            // ポップアップを開く関数
+                            function openPopup() {
+                            document.getElementById('popup2').style.display = 'block';
+                            }
+                            // ポップアップを閉じる関数
+                            function closePopup() {
+                            document.getElementById('popup2').style.display = 'none';
+                            }
+                            // 背景をクリックした時にポップアップを閉じる
+                            const overlay = document.getElementById('popup2');
+                            overlay.onclick = function(event) {
+                            if (event.target === overlay) {
+                                closePopup();
+                            }
+                            };
+                            // ESCキーでポップアップを閉じる
+                            document.addEventListener('keydown', function(event) {
+                            if (event.key === 'Escape') {
+                                closePopup();
+                            }
+                            });
+                        </script>
+                    </li>
+                    <li>
+                        <!-- ポップアップを開くボタン -->
+                        <button onclick="openPopup()"><img src="images/quocard.png" alt="QUOカード"></button>
+                        <!-- ポップアップの本体 -->
+                        <div class="popup-overlay" id="popup3">
+                            <div class="popup-content">
+                                <img src="images/quocard.png" alt="QUOカード">
+                            </div>
+                        </div>
+                        <script>
+                            // ポップアップを開く関数
+                            function openPopup() {
+                            document.getElementById('popup3').style.display = 'block';
+                            }
+                            // ポップアップを閉じる関数
+                            function closePopup() {
+                            document.getElementById('popup3').style.display = 'none';
+                            }
+                            // 背景をクリックした時にポップアップを閉じる
+                            const overlay = document.getElementById('popup3');
+                            overlay.onclick = function(event) {
+                            if (event.target === overlay) {
+                                closePopup();
+                            }
+                            };
+                            // ESCキーでポップアップを閉じる
+                            document.addEventListener('keydown', function(event) {
+                            if (event.key === 'Escape') {
+                                closePopup();
+                            }
+                            });
+                        </script>
+                    </li>
+                    <li>
+                        <!-- ポップアップを開くボタン -->
+                        <button onclick="openPopup()"><img src="images/drawing_Venus.jpg" alt="ヴィーナス"></button>
+                        <!-- ポップアップの本体 -->
+                        <div class="popup-overlay" id="popup4">
+                            <div class="popup-content">
+                                <img src="images/drawing_Venus.jpg" alt="ヴィーナス">
+                            </div>
+                        </div>
+                        <script>
+                            // ポップアップを開く関数
+                            function openPopup() {
+                            document.getElementById('popup4').style.display = 'block';
+                            }
+                            // ポップアップを閉じる関数
+                            function closePopup() {
+                            document.getElementById('popup4').style.display = 'none';
+                            }
+                            // 背景をクリックした時にポップアップを閉じる
+                            const overlay = document.getElementById('popup4');
+                            overlay.onclick = function(event) {
+                            if (event.target === overlay) {
+                                closePopup();
+                            }
+                            };
+                            // ESCキーでポップアップを閉じる
+                            document.addEventListener('keydown', function(event) {
+                            if (event.key === 'Escape') {
+                                closePopup();
+                            }
+                            });
+                        </script>
+                    </li>
+                    <li>
+                        <!-- ポップアップを開くボタン -->
+                        <button onclick="openPopup()"><img src="images/drawing_wine.jpg" alt="ワイン"></button>
+                        <!-- ポップアップの本体 -->
+                        <div class="popup-overlay" id="popup5">
+                            <div class="popup-content">
+                                <img src="images/drawing_wine.jpg" alt="ワイン">
+                            </div>
+                        </div>
+                        <script>
+                            // ポップアップを開く関数
+                            function openPopup() {
+                            document.getElementById('popup5').style.display = 'block';
+                            }
+                            // ポップアップを閉じる関数
+                            function closePopup() {
+                            document.getElementById('popup5').style.display = 'none';
+                            }
+                            // 背景をクリックした時にポップアップを閉じる
+                            const overlay = document.getElementById('popup5');
+                            overlay.onclick = function(event) {
+                            if (event.target === overlay) {
+                                closePopup();
+                            }
+                            };
+                            // ESCキーでポップアップを閉じる
+                            document.addEventListener('keydown', function(event) {
+                            if (event.key === 'Escape') {
+                                closePopup();
+                            }
+                            });
+                        </script>
+                    </li>
                 </ul>
 
                 <h3>ILLUSTRATION</h3>
                 <ul>
-                    <li><img src="images/postcard_01.jpg" alt="ポストカード"></li>
-                    <li><img src="images/illustration_01.jpg" alt="自由作品01"></li>
-                    <li><img src="images/illustration_02.png" alt="自由作品02"></li>
+                    <li>
+                        <!-- ポップアップを開くボタン -->
+                        <button onclick="openPopup()"><img src="images/postcard_01.jpg" alt="ポストカード"></button>
+                        <!-- ポップアップの本体 -->
+                        <div class="popup-overlay" id="popup6">
+                            <div class="popup-content">
+                                <img src="images/postcard_01.jpg" alt="ポストカード">
+                            </div>
+                        </div>
+                        <script>
+                            // ポップアップを開く関数
+                            function openPopup() {
+                            document.getElementById('popup6').style.display = 'block';
+                            }
+                            // ポップアップを閉じる関数
+                            function closePopup() {
+                            document.getElementById('popup6').style.display = 'none';
+                            }
+                            // 背景をクリックした時にポップアップを閉じる
+                            const overlay = document.getElementById('popup6');
+                            overlay.onclick = function(event) {
+                            if (event.target === overlay) {
+                                closePopup();
+                            }
+                            };
+                            // ESCキーでポップアップを閉じる
+                            document.addEventListener('keydown', function(event) {
+                            if (event.key === 'Escape') {
+                                closePopup();
+                            }
+                            });
+                        </script>
+                    </li>
+                    <li>
+                        <!-- ポップアップを開くボタン -->
+                        <button onclick="openPopup()"><img src="images/illustration_01.jpg" alt="自由作品01"></button>
+                        <!-- ポップアップの本体 -->
+                        <div class="popup-overlay" id="popup7">
+                            <div class="popup-content">
+                                <img src="images/illustration_01.jpg" alt="自由作品01">
+                            </div>
+                        </div>
+                        <script>
+                            // ポップアップを開く関数
+                            function openPopup() {
+                            document.getElementById('popup7').style.display = 'block';
+                            }
+                            // ポップアップを閉じる関数
+                            function closePopup() {
+                            document.getElementById('popup7').style.display = 'none';
+                            }
+                            // 背景をクリックした時にポップアップを閉じる
+                            const overlay = document.getElementById('popup7');
+                            overlay.onclick = function(event) {
+                            if (event.target === overlay) {
+                                closePopup();
+                            }
+                            };
+                            // ESCキーでポップアップを閉じる
+                            document.addEventListener('keydown', function(event) {
+                            if (event.key === 'Escape') {
+                                closePopup();
+                            }
+                            });
+                        </script>
+                    </li>
+                    <li>
+                        <!-- ポップアップを開くボタン -->
+                        <button onclick="openPopup()"><img src="images/illustration_02.png" alt="自由作品02"></button>
+                        <!-- ポップアップの本体 -->
+                        <div class="popup-overlay" id="popup8">
+                            <div class="popup-content">
+                                <img src="images/illustration_02.png" alt="自由作品02">
+                            </div>
+                        </div>
+                        <script>
+                            // ポップアップを開く関数
+                            function openPopup() {
+                            document.getElementById('popup8').style.display = 'block';
+                            }
+                            // ポップアップを閉じる関数
+                            function closePopup() {
+                            document.getElementById('popup8').style.display = 'none';
+                            }
+                            // 背景をクリックした時にポップアップを閉じる
+                            const overlay = document.getElementById('popup8');
+                            overlay.onclick = function(event) {
+                            if (event.target === overlay) {
+                                closePopup();
+                            }
+                            };
+                            // ESCキーでポップアップを閉じる
+                            document.addEventListener('keydown', function(event) {
+                            if (event.key === 'Escape') {
+                                closePopup();
+                            }
+                            });
+                        </script>
+                    </li>
                 </ul>
-
             </div>
+
 
 
             <div class="contact">
 
                 <h2 id="contact">CONTACT</h2>
 
-                <p>メールアドレス</p>
+                <div class="form">
+                    <form action="program.php" method="post">
+                        <dl>
+                            <div class="namae">
+                                <dt><label for="your-name">氏名</label></dt>
+                                <dd><input type="text" size="20" name="your-name" required placeholder="田中　太郎" id="your-name"></dd>
+                            </div>
+                            <div class="mail">
+                                <dt><label for="email">メールアドレス</label></dt>
+                                <dd><input type="email" size="20" name="email" required placeholder="xxx@xxx.com" id="email"></dd>
+                            </div>
+                            <div class="comment">
+                                <dt><label for="comment">お問い合わせ内容</label></dt>
+                                <dd><textarea cols="50%" rows="7" name="comment" required id="comment"></textarea></dd>
+                            </div>
+                        </dl>
+                    </form>
+                    <p><button type="submit" name="send">送信</button></p>
+                </div>
 
             </div>
 
